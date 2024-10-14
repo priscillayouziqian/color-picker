@@ -21,7 +21,8 @@ function convertHexToRGB(hex){
         strippedHex = strippedHex[0] + strippedHex[0] + strippedHex[1] + strippedHex[1] + strippedHex[2] + strippedHex[2];
     }
 
-    const r = parseInt(strippedHex.substring(0,2), 16);
+    //why use 16 as 2nd para: The hexadecimal system uses 16 symbols: 0-9 represent values zero to nine, and A-F (or a-f) represent values ten to fifteen. Therefore, when you want to convert a hexadecimal string to a decimal number, you need to specify that the string is in base 16.
+    const r = parseInt(strippedHex.substring(0,2), 16); 
     const g = parseInt(strippedHex.substring(2,4), 16);
     const b = parseInt(strippedHex.substring(4,6), 16);
     
